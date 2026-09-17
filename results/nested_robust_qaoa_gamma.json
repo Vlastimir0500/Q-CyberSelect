@@ -1,0 +1,835 @@
+{
+  "outer_folds": [
+    {
+      "outer_fold": 1,
+      "candidates": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "ct_state_ttl",
+        "dttl",
+        "rate",
+        "sload",
+        "dur"
+      ],
+      "selected_gamma": 0.0,
+      "inner_gamma_summary": {
+        "0.0": {
+          "mean_f1": 0.9511648285434037,
+          "std_f1": 0.0003110886588064726
+        },
+        "0.1": {
+          "mean_f1": 0.9511648285434037,
+          "std_f1": 0.0003110886588064726
+        },
+        "0.25": {
+          "mean_f1": 0.9511648285434037,
+          "std_f1": 0.0003110886588064726
+        },
+        "0.5": {
+          "mean_f1": 0.9511648285434037,
+          "std_f1": 0.0003110886588064726
+        },
+        "1.0": {
+          "mean_f1": 0.9511648285434037,
+          "std_f1": 0.0003110886588064726
+        },
+        "2.0": {
+          "mean_f1": 0.9404232818960373,
+          "std_f1": 0.0011072962871934077
+        }
+      },
+      "qaoa_selected": [
+        "sbytes",
+        "ct_state_ttl",
+        "dttl",
+        "sload"
+      ],
+      "exact_selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "qaoa_objective": 3.03514311628787,
+      "exact_objective": 3.32724163335797,
+      "approximation_ratio": 0.912210007790957,
+      "f1": 0.948891812569578,
+      "balanced_accuracy": 0.9241435033628871,
+      "roc_auc": 0.9831298187333058
+    },
+    {
+      "outer_fold": 2,
+      "candidates": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "ct_state_ttl",
+        "dttl",
+        "rate",
+        "sload",
+        "dur"
+      ],
+      "selected_gamma": 0.0,
+      "inner_gamma_summary": {
+        "0.0": {
+          "mean_f1": 0.9491611616960377,
+          "std_f1": 0.0002961809495838917
+        },
+        "0.1": {
+          "mean_f1": 0.9491611616960377,
+          "std_f1": 0.0002961809495838917
+        },
+        "0.25": {
+          "mean_f1": 0.9491611616960377,
+          "std_f1": 0.0002961809495838917
+        },
+        "0.5": {
+          "mean_f1": 0.9491611616960377,
+          "std_f1": 0.0002961809495838917
+        },
+        "1.0": {
+          "mean_f1": 0.9491611616960377,
+          "std_f1": 0.0002961809495838917
+        },
+        "2.0": {
+          "mean_f1": 0.9402332789782338,
+          "std_f1": 0.001420931952708029
+        }
+      },
+      "qaoa_selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "exact_selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "qaoa_objective": 3.323466910431779,
+      "exact_objective": 3.323466910431779,
+      "approximation_ratio": 1.0,
+      "f1": 0.9504155478839024,
+      "balanced_accuracy": 0.9332877553387797,
+      "roc_auc": 0.9845636456125555
+    },
+    {
+      "outer_fold": 3,
+      "candidates": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "ct_state_ttl",
+        "dttl",
+        "rate",
+        "sload",
+        "dur"
+      ],
+      "selected_gamma": 0.0,
+      "inner_gamma_summary": {
+        "0.0": {
+          "mean_f1": 0.9501893504475781,
+          "std_f1": 0.00038872311332103246
+        },
+        "0.1": {
+          "mean_f1": 0.9501893504475781,
+          "std_f1": 0.00038872311332103246
+        },
+        "0.25": {
+          "mean_f1": 0.9501893504475781,
+          "std_f1": 0.00038872311332103246
+        },
+        "0.5": {
+          "mean_f1": 0.9501893504475781,
+          "std_f1": 0.00038872311332103246
+        },
+        "1.0": {
+          "mean_f1": 0.9501893504475781,
+          "std_f1": 0.00038872311332103246
+        },
+        "2.0": {
+          "mean_f1": 0.9409627047549196,
+          "std_f1": 0.001142178562494036
+        }
+      },
+      "qaoa_selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "sload"
+      ],
+      "exact_selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "qaoa_objective": 3.2468487569153877,
+      "exact_objective": 3.3270047500821467,
+      "approximation_ratio": 0.975907460557494,
+      "f1": 0.9563538143080729,
+      "balanced_accuracy": 0.9343287481388547,
+      "roc_auc": 0.9873760441600017
+    }
+  ],
+  "inner_results": [
+    {
+      "outer_fold": 1,
+      "inner_fold": 1,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9512293275587835
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 1,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9512293275587835
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 1,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9512293275587835
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 1,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9512293275587835
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 1,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9512293275587835
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 1,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9416941694169417
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 2,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507556916013009
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 2,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507556916013009
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 2,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507556916013009
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 2,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507556916013009
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 2,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507556916013009
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 2,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9405801709465652
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 3,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9515094664701266
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 3,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9515094664701266
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 3,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9515094664701266
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 3,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9515094664701266
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 3,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9515094664701266
+    },
+    {
+      "outer_fold": 1,
+      "inner_fold": 3,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9389955053246051
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 1,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9487539150318006
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 1,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9487539150318006
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 1,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9487539150318006
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 1,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9487539150318006
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 1,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9487539150318006
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 1,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9418617676711101
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 2,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9492799478417611
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 2,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9492799478417611
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 2,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9492799478417611
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 2,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9492799478417611
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 2,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9492799478417611
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 2,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9383994318394199
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 3,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9494496222145514
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 3,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9494496222145514
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 3,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9494496222145514
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 3,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9494496222145514
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 3,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9494496222145514
+    },
+    {
+      "outer_fold": 2,
+      "inner_fold": 3,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9404386374241718
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 1,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507249703508168
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 1,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507249703508168
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 1,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507249703508168
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 1,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507249703508168
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 1,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9507249703508168
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 1,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9407138197744851
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 2,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9500287411381491
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 2,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9500287411381491
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 2,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9500287411381491
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 2,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9500287411381491
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 2,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9500287411381491
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 2,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9397049750406641
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 3,
+      "gamma": 0.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9498143398537687
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 3,
+      "gamma": 0.1,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9498143398537687
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 3,
+      "gamma": 0.25,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9498143398537687
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 3,
+      "gamma": 0.5,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9498143398537687
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 3,
+      "gamma": 1.0,
+      "selected": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "dttl"
+      ],
+      "f1": 0.9498143398537687
+    },
+    {
+      "outer_fold": 3,
+      "inner_fold": 3,
+      "gamma": 2.0,
+      "selected": [
+        "sttl",
+        "dbytes",
+        "dttl",
+        "dur"
+      ],
+      "f1": 0.9424693194496095
+    }
+  ],
+  "summary": {
+    "mean_f1": 0.9518870582538511,
+    "std_f1": 0.003942635484415858,
+    "mean_balanced_accuracy": 0.9305866689468405,
+    "mean_roc_auc": 0.9850231695019543,
+    "mean_approximation_ratio": 0.962705822782817
+  }
+}
