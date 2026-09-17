@@ -1,0 +1,66 @@
+[
+  {
+    "feature": "swin",
+    "mean_delta_f1": -0.008309130405397122,
+    "worst_delta_f1": -0.02096406696445019,
+    "mean_delta_balanced_accuracy": -0.005936872813448901,
+    "mean_delta_roc_auc": -0.009237358122312645,
+    "sensitivity_cost": 0.008309130405397122
+  },
+  {
+    "feature": "sttl",
+    "mean_delta_f1": -0.007729525572539673,
+    "worst_delta_f1": -0.017276398274246096,
+    "mean_delta_balanced_accuracy": -0.007271802915204264,
+    "mean_delta_roc_auc": -0.010850960215685978,
+    "sensitivity_cost": 0.007729525572539673
+  },
+  {
+    "feature": "ct_dst_sport_ltm",
+    "mean_delta_f1": -0.004533559021273331,
+    "worst_delta_f1": -0.007944841963035576,
+    "mean_delta_balanced_accuracy": -0.006697206313486224,
+    "mean_delta_roc_auc": -0.0075964940830998634,
+    "sensitivity_cost": 0.004533559021273331
+  },
+  {
+    "feature": "rate",
+    "mean_delta_f1": -0.002500352982071457,
+    "worst_delta_f1": -0.006006138287228513,
+    "mean_delta_balanced_accuracy": -0.01841766759258538,
+    "mean_delta_roc_auc": -0.007517147397864515,
+    "sensitivity_cost": 0.002500352982071457
+  },
+  {
+    "feature": "dwin",
+    "mean_delta_f1": -0.0006248951764969486,
+    "worst_delta_f1": -0.0013494671681392179,
+    "mean_delta_balanced_accuracy": -0.000151465639004194,
+    "mean_delta_roc_auc": 0.00010288466952041503,
+    "sensitivity_cost": 0.0006248951764969486
+  },
+  {
+    "feature": "ct_state_ttl",
+    "mean_delta_f1": 1.5103484284869259e-05,
+    "worst_delta_f1": 0.0,
+    "mean_delta_balanced_accuracy": 9.2269471225142e-06,
+    "mean_delta_roc_auc": -7.166626153863752e-05,
+    "sensitivity_cost": -1.5103484284869259e-05
+  },
+  {
+    "feature": "dmean",
+    "mean_delta_f1": 0.0019808789677560057,
+    "worst_delta_f1": -0.00028649098899413694,
+    "mean_delta_balanced_accuracy": -0.01391879727897062,
+    "mean_delta_roc_auc": -0.006648506098079186,
+    "sensitivity_cost": -0.0019808789677560057
+  },
+  {
+    "feature": "dload",
+    "mean_delta_f1": 0.005378385868777135,
+    "worst_delta_f1": 0.0038757782379685857,
+    "mean_delta_balanced_accuracy": -0.013368870362153173,
+    "mean_delta_roc_auc": -0.00539379375359408,
+    "sensitivity_cost": -0.005378385868777135
+  }
+]
