@@ -1,0 +1,152 @@
+[
+  {
+    "outer_fold": 1,
+    "candidates": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "ct_state_ttl",
+      "dttl",
+      "rate",
+      "sload",
+      "dur"
+    ],
+    "baseline_selected": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "rate"
+    ],
+    "robust_selected": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "dttl"
+    ],
+    "baseline": {
+      "clean_f1": 0.9547407510677938,
+      "clean_balanced_accuracy": 0.9344169860088956,
+      "clean_roc_auc": 0.9866606804559593,
+      "mean_perturbed_f1": 0.933580756175519,
+      "worst_perturbed_f1": 0.8579017264276229,
+      "mean_f1_degradation": 0.02118374966887078,
+      "worst_f1_degradation": 0.09683902464017091,
+      "mean_perturbed_balanced_accuracy": 0.9056073345376051,
+      "mean_perturbed_roc_auc": 0.9713252434401781
+    },
+    "robust": {
+      "clean_f1": 0.9509506188592574,
+      "clean_balanced_accuracy": 0.9328194911031404,
+      "clean_roc_auc": 0.9836135063629949,
+      "mean_perturbed_f1": 0.9014540350357171,
+      "worst_perturbed_f1": 0.7369886297034345,
+      "mean_f1_degradation": 0.049496583823540226,
+      "worst_f1_degradation": 0.21396198915582287,
+      "mean_perturbed_balanced_accuracy": 0.8809364313877035,
+      "mean_perturbed_roc_auc": 0.9614745145370124
+    },
+    "clean_f1_change": -0.003790132208536412,
+    "mean_degradation_change": 0.028312834154669446,
+    "worst_degradation_change": 0.11712296451565196
+  },
+  {
+    "outer_fold": 2,
+    "candidates": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "ct_state_ttl",
+      "dttl",
+      "rate",
+      "sload",
+      "dur"
+    ],
+    "baseline_selected": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "rate"
+    ],
+    "robust_selected": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "dttl"
+    ],
+    "baseline": {
+      "clean_f1": 0.9547588615684438,
+      "clean_balanced_accuracy": 0.933485310930803,
+      "clean_roc_auc": 0.9867851853431944,
+      "mean_perturbed_f1": 0.9355067079992484,
+      "worst_perturbed_f1": 0.8861768839874581,
+      "mean_f1_degradation": 0.01925215356919532,
+      "worst_f1_degradation": 0.06858197758098572,
+      "mean_perturbed_balanced_accuracy": 0.9071790610262482,
+      "mean_perturbed_roc_auc": 0.9706423437601295
+    },
+    "robust": {
+      "clean_f1": 0.9504155478839024,
+      "clean_balanced_accuracy": 0.9332877553387797,
+      "clean_roc_auc": 0.9845636462858897,
+      "mean_perturbed_f1": 0.9074633416451142,
+      "worst_perturbed_f1": 0.8041198010124441,
+      "mean_f1_degradation": 0.042952206238788114,
+      "worst_f1_degradation": 0.1462957468714583,
+      "mean_perturbed_balanced_accuracy": 0.8875199994015853,
+      "mean_perturbed_roc_auc": 0.9634163980500725
+    },
+    "clean_f1_change": -0.004343313684541439,
+    "mean_degradation_change": 0.023700052669592794,
+    "worst_degradation_change": 0.07771376929047258
+  },
+  {
+    "outer_fold": 3,
+    "candidates": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "ct_state_ttl",
+      "dttl",
+      "rate",
+      "sload",
+      "dur"
+    ],
+    "baseline_selected": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "dttl"
+    ],
+    "robust_selected": [
+      "sbytes",
+      "sttl",
+      "dbytes",
+      "sload"
+    ],
+    "baseline": {
+      "clean_f1": 0.9512805454127621,
+      "clean_balanced_accuracy": 0.9336963696553642,
+      "clean_roc_auc": 0.9847756793096656,
+      "mean_perturbed_f1": 0.9045792019680748,
+      "worst_perturbed_f1": 0.7308695716990414,
+      "mean_f1_degradation": 0.0467013434446872,
+      "worst_f1_degradation": 0.22041097371372065,
+      "mean_perturbed_balanced_accuracy": 0.8844093747547618,
+      "mean_perturbed_roc_auc": 0.9613371981846871
+    },
+    "robust": {
+      "clean_f1": 0.9563538143080729,
+      "clean_balanced_accuracy": 0.9343287481388547,
+      "clean_roc_auc": 0.9873760906213851,
+      "mean_perturbed_f1": 0.9408134746780817,
+      "worst_perturbed_f1": 0.8859238051507826,
+      "mean_f1_degradation": 0.015540339629991184,
+      "worst_f1_degradation": 0.07043000915729025,
+      "mean_perturbed_balanced_accuracy": 0.9116573144626442,
+      "mean_perturbed_roc_auc": 0.9716389031440045
+    },
+    "clean_f1_change": 0.00507326889531079,
+    "mean_degradation_change": -0.03116100381469602,
+    "worst_degradation_change": -0.1499809645564304
+  }
+]
