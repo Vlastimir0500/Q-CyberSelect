@@ -1,0 +1,186 @@
+{
+  "definition": "max(0, joint directional degradation - sum of corresponding single-feature directional degradations)",
+  "baseline_f1": 0.970431672627464,
+  "perturbation_level": 0.1,
+  "features": [
+    "sbytes",
+    "sttl",
+    "dbytes",
+    "ct_state_ttl",
+    "dttl",
+    "rate",
+    "sload",
+    "dur"
+  ],
+  "num_pairs": 28,
+  "nonzero_pairs": 3,
+  "mean_interaction": 1.4684367474916496e-05,
+  "max_interaction": 0.00035152067146621,
+  "top_pairs": [
+    {
+      "feature_a": "sbytes",
+      "feature_b": "sload",
+      "positive_joint_degradation": 0.0008976595144730704,
+      "positive_additive_reference": 0.0005828426419597355,
+      "positive_interaction": 0.0003148168725133349,
+      "negative_joint_degradation": 0.0016700358199833731,
+      "negative_additive_reference": 0.001281811349564288,
+      "negative_interaction": 0.00038822447041908514,
+      "mean_interaction": 0.00035152067146621
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "dur",
+      "positive_joint_degradation": 0.0006857906640503897,
+      "positive_additive_reference": 0.0005828426419597355,
+      "positive_interaction": 0.00010294802209065423,
+      "negative_joint_degradation": 0.0011042368042238904,
+      "negative_additive_reference": 0.001281811349564288,
+      "negative_interaction": 0.0,
+      "mean_interaction": 5.147401104532712e-05
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "sttl",
+      "positive_joint_degradation": 0.0005991778555319849,
+      "positive_additive_reference": 0.0005828426419597355,
+      "positive_interaction": 1.633521357224943e-05,
+      "negative_joint_degradation": 0.0010823788363030218,
+      "negative_additive_reference": 0.001281811349564288,
+      "negative_interaction": 0.0,
+      "mean_interaction": 8.167606786124715e-06
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "dbytes",
+      "positive_joint_degradation": 0.0007171624668371734,
+      "positive_additive_reference": 0.0008469801327175563,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.001514290764161319,
+      "negative_additive_reference": 0.0016187838607298888,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "dttl",
+      "positive_joint_degradation": 0.0005828426419597355,
+      "positive_additive_reference": 0.0005828426419597355,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.001281811349564288,
+      "negative_additive_reference": 0.001281811349564288,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "ct_state_ttl",
+      "positive_joint_degradation": 0.0006230086665595103,
+      "positive_additive_reference": 0.0006231982652236123,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0013219417786026755,
+      "negative_additive_reference": 0.0013221669728281649,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "rate",
+      "positive_joint_degradation": 0.0003197732334995207,
+      "positive_additive_reference": 0.0005828426419597355,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.001061856077651191,
+      "negative_additive_reference": 0.001281811349564288,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "dbytes",
+      "positive_joint_degradation": 0.00015478276071978492,
+      "positive_additive_reference": 0.0002641374907578209,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.00015315060116949386,
+      "negative_additive_reference": 0.0003369725111656008,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "ct_state_ttl",
+      "positive_joint_degradation": 0.0,
+      "positive_additive_reference": 4.035562326387687e-05,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0,
+      "negative_additive_reference": 4.035562326387687e-05,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "dttl",
+      "positive_joint_degradation": 0.0,
+      "positive_additive_reference": 0.0,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0,
+      "negative_additive_reference": 0.0,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "rate",
+      "positive_joint_degradation": 0.0,
+      "positive_additive_reference": 0.0,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0,
+      "negative_additive_reference": 0.0,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "sload",
+      "positive_joint_degradation": 0.0,
+      "positive_additive_reference": 0.0,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0,
+      "negative_additive_reference": 0.0,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "dur",
+      "positive_joint_degradation": 0.0,
+      "positive_additive_reference": 0.0,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0,
+      "negative_additive_reference": 0.0,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "dbytes",
+      "feature_b": "ct_state_ttl",
+      "positive_joint_degradation": 0.0003044176400234244,
+      "positive_additive_reference": 0.00030449311402169776,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0003772638556069907,
+      "negative_additive_reference": 0.00037732813442947766,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    },
+    {
+      "feature_a": "dbytes",
+      "feature_b": "dttl",
+      "positive_joint_degradation": 0.0002641374907578209,
+      "positive_additive_reference": 0.0002641374907578209,
+      "positive_interaction": 0.0,
+      "negative_joint_degradation": 0.0003369725111656008,
+      "negative_additive_reference": 0.0003369725111656008,
+      "negative_interaction": 0.0,
+      "mean_interaction": 0.0
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "dataset": "UNSW-NB15 training split",
+  "validation_fraction": 0.2,
+  "random_state": 42,
+  "model": "RandomForestClassifier",
+  "n_estimators": 300,
+  "perturbation_level": 0.1,
+  "features": [
+    "sbytes",
+    "sttl",
+    "dbytes",
+    "ct_state_ttl",
+    "dttl",
+    "rate",
+    "sload",
+    "dur"
+  ],
+  "baseline_f1": 0.970431672627464,
+  "mean_single_degradation": 0.00015915470249844993,
+  "max_single_degradation": 0.0009323269957620117,
+  "mean_pairwise_synergy": 0.00013006833456069282,
+  "max_pairwise_synergy": 0.0008176841693471942,
+  "nonzero_synergy_pairs": 11,
+  "num_pairs": 28,
+  "top_synergy_pairs": [
+    {
+      "feature_a": "sbytes",
+      "feature_b": "sload",
+      "joint_degradation": 0.0012838476672282,
+      "single_a": 0.0009323269957620117,
+      "single_b": 0.0,
+      "additive_reference": 0.00046616349788100586,
+      "pairwise_synergy": 0.0008176841693471942
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "dbytes",
+      "joint_degradation": 0.0011157266154992,
+      "single_a": 0.0009323269957620117,
+      "single_b": 0.00030055500096171084,
+      "additive_reference": 0.0006164409983618613,
+      "pairwise_synergy": 0.0004992856171373388
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "ct_state_ttl",
+      "joint_degradation": 0.000972475222581,
+      "single_a": 0.0009323269957620117,
+      "single_b": 4.035562326387687e-05,
+      "additive_reference": 0.0004863413095129443,
+      "pairwise_synergy": 0.00048613391306805565
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "dttl",
+      "joint_degradation": 0.000932326995762,
+      "single_a": 0.0009323269957620117,
+      "single_b": 0.0,
+      "additive_reference": 0.00046616349788100586,
+      "pairwise_synergy": 0.00046616349788099415
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "dur",
+      "joint_degradation": 0.0008950137341371,
+      "single_a": 0.0009323269957620117,
+      "single_b": 0.0,
+      "additive_reference": 0.00046616349788100586,
+      "pairwise_synergy": 0.00042885023625609416
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "sttl",
+      "joint_degradation": 0.0008407783459175,
+      "single_a": 0.0009323269957620117,
+      "single_b": 0.0,
+      "additive_reference": 0.00046616349788100586,
+      "pairwise_synergy": 0.0003746148480364941
+    },
+    {
+      "feature_a": "sbytes",
+      "feature_b": "rate",
+      "joint_degradation": 0.0006908146555753,
+      "single_a": 0.0009323269957620117,
+      "single_b": 0.0,
+      "additive_reference": 0.00046616349788100586,
+      "pairwise_synergy": 0.00022465115769429412
+    },
+    {
+      "feature_a": "dbytes",
+      "feature_b": "ct_state_ttl",
+      "joint_degradation": 0.0003408407478152,
+      "single_a": 0.00030055500096171084,
+      "single_b": 4.035562326387687e-05,
+      "additive_reference": 0.00017045531211279386,
+      "pairwise_synergy": 0.00017038543570240612
+    },
+    {
+      "feature_a": "dbytes",
+      "feature_b": "dttl",
+      "joint_degradation": 0.0003005550009617,
+      "single_a": 0.00030055500096171084,
+      "single_b": 0.0,
+      "additive_reference": 0.00015027750048085542,
+      "pairwise_synergy": 0.00015027750048084458
+    },
+    {
+      "feature_a": "ct_state_ttl",
+      "feature_b": "dttl",
+      "joint_degradation": 4.035562326387687e-05,
+      "single_a": 4.035562326387687e-05,
+      "single_b": 0.0,
+      "additive_reference": 2.0177811631938436e-05,
+      "pairwise_synergy": 2.0177811631938436e-05
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "dbytes",
+      "joint_degradation": 0.0001539666809446,
+      "single_a": 0.0,
+      "single_b": 0.00030055500096171084,
+      "additive_reference": 0.00015027750048085542,
+      "pairwise_synergy": 3.689180463744586e-06
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "ct_state_ttl",
+      "joint_degradation": 0.0,
+      "single_a": 0.0,
+      "single_b": 4.035562326387687e-05,
+      "additive_reference": 2.0177811631938436e-05,
+      "pairwise_synergy": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "sload",
+      "joint_degradation": 0.0,
+      "single_a": 0.0,
+      "single_b": 0.0,
+      "additive_reference": 0.0,
+      "pairwise_synergy": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "rate",
+      "joint_degradation": 0.0,
+      "single_a": 0.0,
+      "single_b": 0.0,
+      "additive_reference": 0.0,
+      "pairwise_synergy": 0.0
+    },
+    {
+      "feature_a": "sttl",
+      "feature_b": "dttl",
+      "joint_degradation": 0.0,
+      "single_a": 0.0,
+      "single_b": 0.0,
+      "additive_reference": 0.0,
+      "pairwise_synergy": 0.0
+    }
+  ],
+  "single_results_path": "results\\matched_single_perturbation_robustness.csv",
+  "synergy_matrix_path": "results\\pairwise_robustness_synergy_matrix.csv"
+}
