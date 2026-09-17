@@ -1,0 +1,26 @@
+{
+  "candidate_features": [
+    "sttl",
+    "ct_state_ttl",
+    "dload",
+    "ct_dst_sport_ltm",
+    "dmean",
+    "rate",
+    "swin",
+    "dwin"
+  ],
+  "k": 4,
+  "redundancy_weight": 0.25,
+  "gamma_grid": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "relevance_min": 0.0,
+  "relevance_max": 0.4917012804060424,
+  "robustness_min": 0.0004492120563184,
+  "robustness_max": 0.0502952515625833
+}

@@ -1,0 +1,146 @@
+[
+  {
+    "gamma": 0.0,
+    "qaoa_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "dmean"
+    ],
+    "qaoa_objective": 1.909409973113636,
+    "qaoa_relevance_term": 2.6616053291377537,
+    "qaoa_robustness_term": 1.4311916597406145,
+    "qaoa_redundancy_term": 3.0087814240964708,
+    "exact_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "exact_objective": 2.1429506159531893,
+    "exact_relevance_term": 2.7517153751416856,
+    "exact_robustness_term": 1.2100868645837897,
+    "exact_redundancy_term": 2.435059036753985,
+    "approximation_ratio": 0.8910191205056427
+  },
+  {
+    "gamma": 0.1,
+    "qaoa_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "qaoa_objective": 2.0219419294948104,
+    "qaoa_relevance_term": 2.7517153751416856,
+    "qaoa_robustness_term": 1.2100868645837897,
+    "qaoa_redundancy_term": 2.435059036753985,
+    "exact_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "exact_objective": 2.0219419294948104,
+    "exact_relevance_term": 2.7517153751416856,
+    "exact_robustness_term": 1.2100868645837897,
+    "exact_redundancy_term": 2.435059036753985,
+    "approximation_ratio": 1.0
+  },
+  {
+    "gamma": 0.25,
+    "qaoa_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "qaoa_objective": 1.8404288998072418,
+    "qaoa_relevance_term": 2.7517153751416856,
+    "qaoa_robustness_term": 1.2100868645837897,
+    "qaoa_redundancy_term": 2.435059036753985,
+    "exact_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "exact_objective": 1.8404288998072418,
+    "exact_relevance_term": 2.7517153751416856,
+    "exact_robustness_term": 1.2100868645837897,
+    "exact_redundancy_term": 2.435059036753985,
+    "approximation_ratio": 1.0
+  },
+  {
+    "gamma": 0.5,
+    "qaoa_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "qaoa_objective": 1.5379071836612943,
+    "qaoa_relevance_term": 2.7517153751416856,
+    "qaoa_robustness_term": 1.2100868645837897,
+    "qaoa_redundancy_term": 2.435059036753985,
+    "exact_selected": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "exact_objective": 1.5379071836612943,
+    "exact_relevance_term": 2.7517153751416856,
+    "exact_robustness_term": 1.2100868645837897,
+    "exact_redundancy_term": 2.435059036753985,
+    "approximation_ratio": 1.0
+  },
+  {
+    "gamma": 1.0,
+    "qaoa_selected": [
+      "sttl",
+      "dload",
+      "ct_dst_sport_ltm",
+      "rate"
+    ],
+    "qaoa_objective": 1.1997609769644877,
+    "qaoa_relevance_term": 2.226293154304119,
+    "qaoa_robustness_term": 0.5559988422700187,
+    "qaoa_redundancy_term": 1.8821333402784495,
+    "exact_selected": [
+      "sttl",
+      "dload",
+      "ct_dst_sport_ltm",
+      "rate"
+    ],
+    "exact_objective": 1.1997609769644877,
+    "exact_relevance_term": 2.226293154304119,
+    "exact_robustness_term": 0.5559988422700187,
+    "exact_redundancy_term": 1.8821333402784495,
+    "approximation_ratio": 1.0
+  },
+  {
+    "gamma": 2.0,
+    "qaoa_selected": [
+      "sttl",
+      "dload",
+      "rate",
+      "swin"
+    ],
+    "qaoa_objective": 0.966421506085839,
+    "qaoa_relevance_term": 1.9269126797986762,
+    "qaoa_robustness_term": 0.21008686458378958,
+    "qaoa_redundancy_term": 2.1612697781810324,
+    "exact_selected": [
+      "sttl",
+      "dload",
+      "rate",
+      "swin"
+    ],
+    "exact_objective": 0.966421506085839,
+    "exact_relevance_term": 1.9269126797986762,
+    "exact_robustness_term": 0.21008686458378958,
+    "exact_redundancy_term": 2.1612697781810324,
+    "approximation_ratio": 1.0
+  }
+]

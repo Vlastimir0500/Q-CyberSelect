@@ -1,0 +1,74 @@
+[
+  {
+    "feature": "ct_state_ttl",
+    "mean_f1_degradation": 0.02479691871419561,
+    "worst_f1_degradation": 0.07579358441097117,
+    "mean_delta_f1": -0.024260306941123928,
+    "mean_delta_balanced_accuracy": -0.02505853536198591,
+    "mean_delta_roc_auc": -0.04293711898106545,
+    "robustness_cost": 0.05029525156258339
+  },
+  {
+    "feature": "ct_dst_sport_ltm",
+    "mean_f1_degradation": 0.01301942450686124,
+    "worst_f1_degradation": 0.02236368381665166,
+    "mean_delta_f1": -0.01301942450686124,
+    "mean_delta_balanced_accuracy": -0.01881194013480066,
+    "mean_delta_roc_auc": -0.019936702900400356,
+    "robustness_cost": 0.01769155416175645
+  },
+  {
+    "feature": "dmean",
+    "mean_f1_degradation": 0.0030943957425917565,
+    "worst_f1_degradation": 0.029554281046174413,
+    "mean_delta_f1": 0.0011487126813911495,
+    "mean_delta_balanced_accuracy": -0.01290673232876565,
+    "mean_delta_roc_auc": -0.003505434033550118,
+    "robustness_cost": 0.016324338394383086
+  },
+  {
+    "feature": "rate",
+    "mean_f1_degradation": 0.0010580625502135492,
+    "worst_f1_degradation": 0.00954821752972912,
+    "mean_delta_f1": 0.0010925657639764522,
+    "mean_delta_balanced_accuracy": -0.004810819843457788,
+    "mean_delta_roc_auc": 0.002854789031830624,
+    "robustness_cost": 0.005303140039971334
+  },
+  {
+    "feature": "dload",
+    "mean_f1_degradation": 0.0013123053283500706,
+    "worst_f1_degradation": 0.0063301465593411654,
+    "mean_delta_f1": 0.0018360115928968874,
+    "mean_delta_balanced_accuracy": -0.002765660530308479,
+    "mean_delta_roc_auc": 0.0052702311421611485,
+    "robustness_cost": 0.003821225943845618
+  },
+  {
+    "feature": "sttl",
+    "mean_f1_degradation": 0.0013608203349658177,
+    "worst_f1_degradation": 0.004029716338892708,
+    "mean_delta_f1": -0.0013608203349658177,
+    "mean_delta_balanced_accuracy": -0.0005709538714370743,
+    "mean_delta_roc_auc": -0.008770822335895791,
+    "robustness_cost": 0.002695268336929263
+  },
+  {
+    "feature": "dwin",
+    "mean_f1_degradation": 0.0009390184136989591,
+    "worst_f1_degradation": 0.00294398578137256,
+    "mean_delta_f1": -0.0009390184136989591,
+    "mean_delta_balanced_accuracy": -0.00017352687419240156,
+    "mean_delta_roc_auc": 0.0016346848764494351,
+    "robustness_cost": 0.0019415020975357595
+  },
+  {
+    "feature": "swin",
+    "mean_f1_degradation": 0.00010107921098904497,
+    "worst_f1_degradation": 0.0007973449016478451,
+    "mean_delta_f1": -0.00010107921098904497,
+    "mean_delta_balanced_accuracy": 2.389371643267567e-05,
+    "mean_delta_roc_auc": 0.0009520309028193798,
+    "robustness_cost": 0.000449212056318445
+  }
+]
