@@ -1,0 +1,1181 @@
+{
+  "project": "Q-CyberSelect",
+  "title": "Quantum Graph-Theoretic Feature Selection for Robust Network Intrusion Detection",
+  "dataset": {
+    "name": "UNSW-NB15",
+    "predictor_count": 42,
+    "training_file": "data/unsw_nb15/UNSW_NB15_training-set.csv",
+    "testing_file": "data/unsw_nb15/UNSW_NB15_testing-set.csv"
+  },
+  "frozen_evaluation": {
+    "locked_test_evaluation": true,
+    "random_state": 42,
+    "classifier": "RandomForestClassifier",
+    "n_estimators": 300,
+    "qaoa_feature_count": 4,
+    "qaoa_features": [
+      "sttl",
+      "ct_state_ttl",
+      "dload",
+      "rate"
+    ],
+    "feature_reduction_percent": 90.47619047619048
+  },
+  "locked_test_results": {
+    "qaoa_4": {
+      "precision": 0.7722405036805965,
+      "recall": 0.8955925174269831,
+      "f1": 0.8293549869771717,
+      "balanced_accuracy": 0.7859854479026807,
+      "roc_auc": 0.850748288900389,
+      "pr_auc": 0.8172973319384775,
+      "mcc": 0.5922249310229057
+    },
+    "all_42": {
+      "precision": 0.8166462980865695,
+      "recall": 0.9876246360187064,
+      "f1": 0.8940342469172782,
+      "balanced_accuracy": 0.8579744801715155,
+      "roc_auc": 0.980429758168563,
+      "pr_auc": 0.9842650538808488,
+      "mcc": 0.7550340970206842
+    }
+  },
+  "selector_comparison": [
+    {
+      "method": "All-42",
+      "feature_count": 42,
+      "feature_reduction_percent": 0.0,
+      "precision": 0.8166462980865695,
+      "recall": 0.9876246360187064,
+      "f1": 0.8940342469172782,
+      "balanced_accuracy": 0.8579744801715155,
+      "roc_auc": 0.980429758168563,
+      "pr_auc": 0.9842650538808488,
+      "mcc": 0.7550340970206842,
+      "selected_features": "dur|proto|service|state|spkts|dpkts|sbytes|dbytes|rate|sttl|dttl|sload|dload|sloss|dloss|sinpkt|dinpkt|sjit|djit|swin|stcpb|dtcpb|dwin|tcprtt|synack|ackdat|smean|dmean|trans_depth|response_body_len|ct_srv_src|ct_state_ttl|ct_dst_ltm|ct_src_dport_ltm|ct_dst_sport_ltm|ct_dst_src_ltm|is_ftp_login|ct_ftp_cmd|ct_flw_http_mthd|ct_src_ltm|ct_srv_dst|is_sm_ips_ports"
+    },
+    {
+      "method": "QAOA-4",
+      "feature_count": 4,
+      "feature_reduction_percent": 90.47619047619048,
+      "precision": 0.7722405036805965,
+      "recall": 0.8955925174269831,
+      "f1": 0.8293549869771717,
+      "balanced_accuracy": 0.7859854479026807,
+      "roc_auc": 0.850748288900389,
+      "pr_auc": 0.8172973319384775,
+      "mcc": 0.5922249310229057,
+      "selected_features": "sttl|ct_state_ttl|dload|rate"
+    },
+    {
+      "method": "MI-4",
+      "feature_count": 4,
+      "feature_reduction_percent": 90.47619047619048,
+      "precision": 0.8742783704942779,
+      "recall": 0.9454248654372188,
+      "f1": 0.9084607802613588,
+      "balanced_accuracy": 0.8894286489348255,
+      "roc_auc": 0.9695646124925776,
+      "pr_auc": 0.9696797747457804,
+      "mcc": 0.7893621121297312,
+      "selected_features": "dttl|dbytes|sttl|sbytes"
+    },
+    {
+      "method": "ANOVA-4",
+      "feature_count": 4,
+      "feature_reduction_percent": 90.47619047619048,
+      "precision": 0.7706076392018314,
+      "recall": 0.9430645018971148,
+      "f1": 0.8481583985556845,
+      "balanced_accuracy": 0.7995592779755843,
+      "roc_auc": 0.8899860593077857,
+      "pr_auc": 0.8725681019813438,
+      "mcc": 0.6356923872642023,
+      "selected_features": "ct_dst_sport_ltm|dload|ct_state_ttl|sttl"
+    },
+    {
+      "method": "L1-4",
+      "feature_count": 4,
+      "feature_reduction_percent": 90.47619047619048,
+      "precision": 0.7544187357922004,
+      "recall": 0.94438807023736,
+      "f1": 0.8387817278774282,
+      "balanced_accuracy": 0.7838697107943556,
+      "roc_auc": 0.814285942929164,
+      "pr_auc": 0.7953709415911804,
+      "mcc": 0.6102224607953795,
+      "selected_features": "dload|swin|proto|dttl"
+    },
+    {
+      "method": "RF-4",
+      "feature_count": 4,
+      "feature_reduction_percent": 90.47619047619048,
+      "precision": 0.8103766376563112,
+      "recall": 0.9592340951204448,
+      "f1": 0.8785445141477508,
+      "balanced_accuracy": 0.8421170475602224,
+      "roc_auc": 0.957890365614887,
+      "pr_auc": 0.963399976661654,
+      "mcc": 0.7144143320087587,
+      "selected_features": "rate|sload|ct_state_ttl|sttl"
+    }
+  ],
+  "selected_features": [
+    {
+      "method": "All-42",
+      "rank": 1,
+      "feature": "dur"
+    },
+    {
+      "method": "All-42",
+      "rank": 2,
+      "feature": "proto"
+    },
+    {
+      "method": "All-42",
+      "rank": 3,
+      "feature": "service"
+    },
+    {
+      "method": "All-42",
+      "rank": 4,
+      "feature": "state"
+    },
+    {
+      "method": "All-42",
+      "rank": 5,
+      "feature": "spkts"
+    },
+    {
+      "method": "All-42",
+      "rank": 6,
+      "feature": "dpkts"
+    },
+    {
+      "method": "All-42",
+      "rank": 7,
+      "feature": "sbytes"
+    },
+    {
+      "method": "All-42",
+      "rank": 8,
+      "feature": "dbytes"
+    },
+    {
+      "method": "All-42",
+      "rank": 9,
+      "feature": "rate"
+    },
+    {
+      "method": "All-42",
+      "rank": 10,
+      "feature": "sttl"
+    },
+    {
+      "method": "All-42",
+      "rank": 11,
+      "feature": "dttl"
+    },
+    {
+      "method": "All-42",
+      "rank": 12,
+      "feature": "sload"
+    },
+    {
+      "method": "All-42",
+      "rank": 13,
+      "feature": "dload"
+    },
+    {
+      "method": "All-42",
+      "rank": 14,
+      "feature": "sloss"
+    },
+    {
+      "method": "All-42",
+      "rank": 15,
+      "feature": "dloss"
+    },
+    {
+      "method": "All-42",
+      "rank": 16,
+      "feature": "sinpkt"
+    },
+    {
+      "method": "All-42",
+      "rank": 17,
+      "feature": "dinpkt"
+    },
+    {
+      "method": "All-42",
+      "rank": 18,
+      "feature": "sjit"
+    },
+    {
+      "method": "All-42",
+      "rank": 19,
+      "feature": "djit"
+    },
+    {
+      "method": "All-42",
+      "rank": 20,
+      "feature": "swin"
+    },
+    {
+      "method": "All-42",
+      "rank": 21,
+      "feature": "stcpb"
+    },
+    {
+      "method": "All-42",
+      "rank": 22,
+      "feature": "dtcpb"
+    },
+    {
+      "method": "All-42",
+      "rank": 23,
+      "feature": "dwin"
+    },
+    {
+      "method": "All-42",
+      "rank": 24,
+      "feature": "tcprtt"
+    },
+    {
+      "method": "All-42",
+      "rank": 25,
+      "feature": "synack"
+    },
+    {
+      "method": "All-42",
+      "rank": 26,
+      "feature": "ackdat"
+    },
+    {
+      "method": "All-42",
+      "rank": 27,
+      "feature": "smean"
+    },
+    {
+      "method": "All-42",
+      "rank": 28,
+      "feature": "dmean"
+    },
+    {
+      "method": "All-42",
+      "rank": 29,
+      "feature": "trans_depth"
+    },
+    {
+      "method": "All-42",
+      "rank": 30,
+      "feature": "response_body_len"
+    },
+    {
+      "method": "All-42",
+      "rank": 31,
+      "feature": "ct_srv_src"
+    },
+    {
+      "method": "All-42",
+      "rank": 32,
+      "feature": "ct_state_ttl"
+    },
+    {
+      "method": "All-42",
+      "rank": 33,
+      "feature": "ct_dst_ltm"
+    },
+    {
+      "method": "All-42",
+      "rank": 34,
+      "feature": "ct_src_dport_ltm"
+    },
+    {
+      "method": "All-42",
+      "rank": 35,
+      "feature": "ct_dst_sport_ltm"
+    },
+    {
+      "method": "All-42",
+      "rank": 36,
+      "feature": "ct_dst_src_ltm"
+    },
+    {
+      "method": "All-42",
+      "rank": 37,
+      "feature": "is_ftp_login"
+    },
+    {
+      "method": "All-42",
+      "rank": 38,
+      "feature": "ct_ftp_cmd"
+    },
+    {
+      "method": "All-42",
+      "rank": 39,
+      "feature": "ct_flw_http_mthd"
+    },
+    {
+      "method": "All-42",
+      "rank": 40,
+      "feature": "ct_src_ltm"
+    },
+    {
+      "method": "All-42",
+      "rank": 41,
+      "feature": "ct_srv_dst"
+    },
+    {
+      "method": "All-42",
+      "rank": 42,
+      "feature": "is_sm_ips_ports"
+    },
+    {
+      "method": "QAOA-4",
+      "rank": 1,
+      "feature": "sttl"
+    },
+    {
+      "method": "QAOA-4",
+      "rank": 2,
+      "feature": "ct_state_ttl"
+    },
+    {
+      "method": "QAOA-4",
+      "rank": 3,
+      "feature": "dload"
+    },
+    {
+      "method": "QAOA-4",
+      "rank": 4,
+      "feature": "rate"
+    },
+    {
+      "method": "MI-4",
+      "rank": 1,
+      "feature": "dttl"
+    },
+    {
+      "method": "MI-4",
+      "rank": 2,
+      "feature": "dbytes"
+    },
+    {
+      "method": "MI-4",
+      "rank": 3,
+      "feature": "sttl"
+    },
+    {
+      "method": "MI-4",
+      "rank": 4,
+      "feature": "sbytes"
+    },
+    {
+      "method": "ANOVA-4",
+      "rank": 1,
+      "feature": "ct_dst_sport_ltm"
+    },
+    {
+      "method": "ANOVA-4",
+      "rank": 2,
+      "feature": "dload"
+    },
+    {
+      "method": "ANOVA-4",
+      "rank": 3,
+      "feature": "ct_state_ttl"
+    },
+    {
+      "method": "ANOVA-4",
+      "rank": 4,
+      "feature": "sttl"
+    },
+    {
+      "method": "L1-4",
+      "rank": 1,
+      "feature": "dload"
+    },
+    {
+      "method": "L1-4",
+      "rank": 2,
+      "feature": "swin"
+    },
+    {
+      "method": "L1-4",
+      "rank": 3,
+      "feature": "proto"
+    },
+    {
+      "method": "L1-4",
+      "rank": 4,
+      "feature": "dttl"
+    },
+    {
+      "method": "RF-4",
+      "rank": 1,
+      "feature": "rate"
+    },
+    {
+      "method": "RF-4",
+      "rank": 2,
+      "feature": "sload"
+    },
+    {
+      "method": "RF-4",
+      "rank": 3,
+      "feature": "ct_state_ttl"
+    },
+    {
+      "method": "RF-4",
+      "rank": 4,
+      "feature": "sttl"
+    }
+  ],
+  "cross_validation": {
+    "qaoa_cv": [
+      {
+        "fold": 1,
+        "selected_features": [
+          "sttl",
+          "ct_state_ttl",
+          "dload",
+          "rate"
+        ],
+        "f1": 0.9391585436139023
+      },
+      {
+        "fold": 2,
+        "selected_features": [
+          "sttl",
+          "ct_state_ttl",
+          "dload",
+          "rate"
+        ],
+        "f1": 0.939425025646158
+      },
+      {
+        "fold": 3,
+        "selected_features": [
+          "sttl",
+          "ct_state_ttl",
+          "dload",
+          "rate"
+        ],
+        "f1": 0.9408084936696242
+      }
+    ],
+    "qaoa_stability": {
+      "runs": 5,
+      "features_per_run": 4,
+      "mean_objective": 1.5390837114120006,
+      "min_objective": 1.523966029057555,
+      "max_objective": 1.542863132000612,
+      "mean_pairwise_jaccard": 0.8400000000000001,
+      "min_pairwise_jaccard": 0.6,
+      "max_pairwise_jaccard": 1.0
+    },
+    "selector_stability": [
+      {
+        "method": "MI-4",
+        "fully_stable_features": [
+          "dttl",
+          "dbytes",
+          "sttl",
+          "sbytes"
+        ],
+        "stable_feature_count": 4
+      },
+      {
+        "method": "ANOVA-4",
+        "fully_stable_features": [
+          "ct_dst_sport_ltm",
+          "dload",
+          "ct_state_ttl",
+          "sttl"
+        ],
+        "stable_feature_count": 4
+      },
+      {
+        "method": "L1-4",
+        "fully_stable_features": [
+          "dload",
+          "swin",
+          "proto",
+          "dttl"
+        ],
+        "stable_feature_count": 4
+      },
+      {
+        "method": "RF-4",
+        "fully_stable_features": [
+          "rate",
+          "sload",
+          "ct_state_ttl",
+          "sttl"
+        ],
+        "stable_feature_count": 4
+      },
+      {
+        "method": "QAOA-4",
+        "fully_stable_features": [
+          "sttl",
+          "ct_state_ttl",
+          "dload",
+          "rate"
+        ],
+        "stable_feature_count": 4
+      }
+    ],
+    "paired_statistics": [
+      {
+        "comparison": "QAOA-4 vs MI-4",
+        "qaoa_mean_f1": 0.9397973543098948,
+        "baseline_mean_f1": 0.9509517653665025,
+        "mean_f1_difference": -0.011154411056607675,
+        "std_difference": 0.0005922754113776714,
+        "mean_absolute_difference": 0.011154411056607675,
+        "cohens_d_paired": -18.833148974835517,
+        "paired_t_statistic": -32.619970890928826,
+        "paired_t_pvalue": 0.0009384716705190991,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_pvalue": 0.25
+      },
+      {
+        "comparison": "QAOA-4 vs ANOVA-4",
+        "qaoa_mean_f1": 0.9397973543098948,
+        "baseline_mean_f1": 0.9282655277695767,
+        "mean_f1_difference": 0.011531826540318183,
+        "std_difference": 0.0008664387334965201,
+        "mean_absolute_difference": 0.011531826540318183,
+        "cohens_d_paired": 13.309454084285232,
+        "paired_t_statistic": 23.05265069498713,
+        "paired_t_pvalue": 0.0018764393420963685,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_pvalue": 0.25
+      },
+      {
+        "comparison": "QAOA-4 vs L1-4",
+        "qaoa_mean_f1": 0.9397973543098948,
+        "baseline_mean_f1": 0.9246447261095123,
+        "mean_f1_difference": 0.015152628200382582,
+        "std_difference": 0.0008833580355223981,
+        "mean_absolute_difference": 0.015152628200382582,
+        "cohens_d_paired": 17.153439025911684,
+        "paired_t_statistic": 29.710627917413827,
+        "paired_t_pvalue": 0.0011309388205452708,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_pvalue": 0.25
+      },
+      {
+        "comparison": "QAOA-4 vs RF-4",
+        "qaoa_mean_f1": 0.9397973543098948,
+        "baseline_mean_f1": 0.9449597331483043,
+        "mean_f1_difference": -0.005162378838409458,
+        "std_difference": 0.00012351077356353844,
+        "mean_absolute_difference": 0.005162378838409458,
+        "cohens_d_paired": -41.79699219318501,
+        "paired_t_statistic": -72.39451408215615,
+        "paired_t_pvalue": 0.00019074993947484884,
+        "wilcoxon_statistic": 0.0,
+        "wilcoxon_pvalue": 0.25
+      }
+    ]
+  },
+  "robustness": {
+    "locked_test_results": [
+      {
+        "method": "All-42",
+        "feature_count": 42,
+        "perturbation_level": 0.05,
+        "clean_f1": 0.8940342469172782,
+        "clean_balanced_accuracy": 0.8579744801715155,
+        "clean_roc_auc": 0.9804297581685628,
+        "perturbed_mean_f1": 0.8858112961026263,
+        "mean_f1_degradation": 0.0082229508146519,
+        "worst_f1_degradation": 0.0097716578752374,
+        "positive_f1": 0.8842625890420407,
+        "negative_f1": 0.8873600031632118
+      },
+      {
+        "method": "All-42",
+        "feature_count": 42,
+        "perturbation_level": 0.1,
+        "clean_f1": 0.8940342469172782,
+        "clean_balanced_accuracy": 0.8579744801715155,
+        "clean_roc_auc": 0.9804297581685628,
+        "perturbed_mean_f1": 0.8796317745949345,
+        "mean_f1_degradation": 0.0144024723223437,
+        "worst_f1_degradation": 0.0150276956314661,
+        "positive_f1": 0.8790065512858121,
+        "negative_f1": 0.8802569979040568
+      },
+      {
+        "method": "All-42",
+        "feature_count": 42,
+        "perturbation_level": 0.2,
+        "clean_f1": 0.8940342469172782,
+        "clean_balanced_accuracy": 0.8579744801715155,
+        "clean_roc_auc": 0.9804297581685628,
+        "perturbed_mean_f1": 0.8684826372161392,
+        "mean_f1_degradation": 0.025551609701139,
+        "worst_f1_degradation": 0.0259195338925701,
+        "positive_f1": 0.868114713024708,
+        "negative_f1": 0.8688505614075703
+      },
+      {
+        "method": "QAOA-4",
+        "feature_count": 4,
+        "perturbation_level": 0.05,
+        "clean_f1": 0.8293549869771717,
+        "clean_balanced_accuracy": 0.7859854479026807,
+        "clean_roc_auc": 0.850748288900389,
+        "perturbed_mean_f1": 0.8220001813342439,
+        "mean_f1_degradation": 0.0196704300015426,
+        "worst_f1_degradation": 0.0393408600030852,
+        "positive_f1": 0.8539862356944015,
+        "negative_f1": 0.7900141269740865
+      },
+      {
+        "method": "QAOA-4",
+        "feature_count": 4,
+        "perturbation_level": 0.1,
+        "clean_f1": 0.8293549869771717,
+        "clean_balanced_accuracy": 0.7859854479026807,
+        "clean_roc_auc": 0.850748288900389,
+        "perturbed_mean_f1": 0.8036122953553575,
+        "mean_f1_degradation": 0.0350424332083642,
+        "worst_f1_degradation": 0.0700848664167285,
+        "positive_f1": 0.8479544701502719,
+        "negative_f1": 0.7592701205604432
+      },
+      {
+        "method": "QAOA-4",
+        "feature_count": 4,
+        "perturbation_level": 0.2,
+        "clean_f1": 0.8293549869771717,
+        "clean_balanced_accuracy": 0.7859854479026807,
+        "clean_roc_auc": 0.850748288900389,
+        "perturbed_mean_f1": 0.820116581039438,
+        "mean_f1_degradation": 0.0195411602667725,
+        "worst_f1_degradation": 0.0390823205335451,
+        "positive_f1": 0.8499604956352494,
+        "negative_f1": 0.7902726664436266
+      },
+      {
+        "method": "MI-4",
+        "feature_count": 4,
+        "perturbation_level": 0.05,
+        "clean_f1": 0.9084607802613588,
+        "clean_balanced_accuracy": 0.8894286489348255,
+        "clean_roc_auc": 0.9695646124925776,
+        "perturbed_mean_f1": 0.4562951561695786,
+        "mean_f1_degradation": 0.4521656240917803,
+        "worst_f1_degradation": 0.5767768914533251,
+        "positive_f1": 0.5809064235311234,
+        "negative_f1": 0.3316838888080338
+      },
+      {
+        "method": "MI-4",
+        "feature_count": 4,
+        "perturbation_level": 0.1,
+        "clean_f1": 0.9084607802613588,
+        "clean_balanced_accuracy": 0.8894286489348255,
+        "clean_roc_auc": 0.9695646124925776,
+        "perturbed_mean_f1": 0.6037558288601537,
+        "mean_f1_degradation": 0.3047049514012052,
+        "worst_f1_degradation": 0.4750617341564304,
+        "positive_f1": 0.4333990461049284,
+        "negative_f1": 0.7741126116153789
+      },
+      {
+        "method": "MI-4",
+        "feature_count": 4,
+        "perturbation_level": 0.2,
+        "clean_f1": 0.9084607802613588,
+        "clean_balanced_accuracy": 0.8894286489348255,
+        "clean_roc_auc": 0.9695646124925776,
+        "perturbed_mean_f1": 0.674891031686827,
+        "mean_f1_degradation": 0.2335697485745319,
+        "worst_f1_degradation": 0.3339491304614059,
+        "positive_f1": 0.574511649799953,
+        "negative_f1": 0.775270413573701
+      },
+      {
+        "method": "ANOVA-4",
+        "feature_count": 4,
+        "perturbation_level": 0.05,
+        "clean_f1": 0.8481583985556845,
+        "clean_balanced_accuracy": 0.7995592779755843,
+        "clean_roc_auc": 0.8899860593077857,
+        "perturbed_mean_f1": 0.8361381935421596,
+        "mean_f1_degradation": 0.0120202050135249,
+        "worst_f1_degradation": 0.0237320337894728,
+        "positive_f1": 0.8478500223181075,
+        "negative_f1": 0.8244263647662117
+      },
+      {
+        "method": "ANOVA-4",
+        "feature_count": 4,
+        "perturbation_level": 0.1,
+        "clean_f1": 0.8481583985556845,
+        "clean_balanced_accuracy": 0.7995592779755843,
+        "clean_roc_auc": 0.8899860593077857,
+        "perturbed_mean_f1": 0.8361381935421596,
+        "mean_f1_degradation": 0.0120202050135249,
+        "worst_f1_degradation": 0.0237320337894728,
+        "positive_f1": 0.8478500223181075,
+        "negative_f1": 0.8244263647662117
+      },
+      {
+        "method": "ANOVA-4",
+        "feature_count": 4,
+        "perturbation_level": 0.2,
+        "clean_f1": 0.8481583985556845,
+        "clean_balanced_accuracy": 0.7995592779755843,
+        "clean_roc_auc": 0.8899860593077857,
+        "perturbed_mean_f1": 0.836101358254925,
+        "mean_f1_degradation": 0.0120570403007595,
+        "worst_f1_degradation": 0.023805704363942,
+        "positive_f1": 0.8478500223181075,
+        "negative_f1": 0.8243526941917425
+      },
+      {
+        "method": "L1-4",
+        "feature_count": 4,
+        "perturbation_level": 0.05,
+        "clean_f1": 0.8387817278774282,
+        "clean_balanced_accuracy": 0.7838697107943556,
+        "clean_roc_auc": 0.814285942929164,
+        "perturbed_mean_f1": 0.8277251456035013,
+        "mean_f1_degradation": 0.0110565822739268,
+        "worst_f1_degradation": 0.0221131645478537,
+        "positive_f1": 0.8166685633295745,
+        "negative_f1": 0.8387817278774282
+      },
+      {
+        "method": "L1-4",
+        "feature_count": 4,
+        "perturbation_level": 0.1,
+        "clean_f1": 0.8387817278774282,
+        "clean_balanced_accuracy": 0.7838697107943556,
+        "clean_roc_auc": 0.814285942929164,
+        "perturbed_mean_f1": 0.8277251456035013,
+        "mean_f1_degradation": 0.0110565822739268,
+        "worst_f1_degradation": 0.0221131645478537,
+        "positive_f1": 0.8166685633295745,
+        "negative_f1": 0.8387817278774282
+      },
+      {
+        "method": "L1-4",
+        "feature_count": 4,
+        "perturbation_level": 0.2,
+        "clean_f1": 0.8387817278774282,
+        "clean_balanced_accuracy": 0.7838697107943556,
+        "clean_roc_auc": 0.814285942929164,
+        "perturbed_mean_f1": 0.8277251456035013,
+        "mean_f1_degradation": 0.0110565822739268,
+        "worst_f1_degradation": 0.0221131645478537,
+        "positive_f1": 0.8166685633295745,
+        "negative_f1": 0.8387817278774282
+      },
+      {
+        "method": "RF-4",
+        "feature_count": 4,
+        "perturbation_level": 0.05,
+        "clean_f1": 0.8785445141477508,
+        "clean_balanced_accuracy": 0.8421170475602224,
+        "clean_roc_auc": 0.957890365614887,
+        "perturbed_mean_f1": 0.8274177021949147,
+        "mean_f1_degradation": 0.051126811952836,
+        "worst_f1_degradation": 0.0805881123878625,
+        "positive_f1": 0.8568790026299412,
+        "negative_f1": 0.7979564017598882
+      },
+      {
+        "method": "RF-4",
+        "feature_count": 4,
+        "perturbation_level": 0.1,
+        "clean_f1": 0.8785445141477508,
+        "clean_balanced_accuracy": 0.8421170475602224,
+        "clean_roc_auc": 0.957890365614887,
+        "perturbed_mean_f1": 0.8310023962090827,
+        "mean_f1_degradation": 0.047542117938668,
+        "worst_f1_degradation": 0.0814973641594243,
+        "positive_f1": 0.864957642429839,
+        "negative_f1": 0.7970471499883265
+      },
+      {
+        "method": "RF-4",
+        "feature_count": 4,
+        "perturbation_level": 0.2,
+        "clean_f1": 0.8785445141477508,
+        "clean_balanced_accuracy": 0.8421170475602224,
+        "clean_roc_auc": 0.957890365614887,
+        "perturbed_mean_f1": 0.8356034234345926,
+        "mean_f1_degradation": 0.0429410907131582,
+        "worst_f1_degradation": 0.0663709812005319,
+        "positive_f1": 0.8590333139219664,
+        "negative_f1": 0.8121735329472188
+      }
+    ],
+    "pairwise_qaoa_ablation": {
+      "features": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "ct_state_ttl",
+        "dttl",
+        "rate",
+        "sload",
+        "dur"
+      ],
+      "k": 4,
+      "lambda": 0.0,
+      "deltas": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        5.0,
+        10.0
+      ],
+      "random_state": 42,
+      "qaoa_reps": 2,
+      "qaoa_maxiter": 80,
+      "qaoa_shots": 4096,
+      "relevance_raw": {
+        "sbytes": 0.4651079848968265,
+        "sttl": 0.39088299391151793,
+        "dbytes": 0.37067550623890044,
+        "ct_state_ttl": 0.3593390304260218,
+        "dttl": 0.3545157394129783,
+        "rate": 0.35163062336136597,
+        "sload": 0.34655011101671573,
+        "dur": 0.3379309005691642
+      },
+      "relevance_normalized": {
+        "sbytes": 1.0,
+        "sttl": 0.41636505210267766,
+        "dbytes": 0.2574725300776059,
+        "ct_state_ttl": 0.16833323369563286,
+        "dttl": 0.1304074466834333,
+        "rate": 0.10772162976236709,
+        "sload": 0.06777329809940277,
+        "dur": 0.0
+      },
+      "interaction_max": 0.0003515206714662,
+      "nonzero_interactions": 3,
+      "results": [
+        {
+          "delta": 0.0,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.8421708158759165,
+          "qaoa_objective": 1.8421708158759165,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 0.1,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.8398473090528162,
+          "qaoa_objective": 1.8398473090528162,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 0.25,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.836362048818166,
+          "qaoa_objective": 1.836362048818166,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 0.5,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.8305532817604155,
+          "qaoa_objective": 1.8305532817604155,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 1.0,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.8189357476449146,
+          "qaoa_objective": 1.8189357476449146,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 2.0,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.795700679413913,
+          "qaoa_objective": 1.795700679413913,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 5.0,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.7259954747209076,
+          "qaoa_objective": 1.7259954747209076,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        },
+        {
+          "delta": 10.0,
+          "exact_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "qaoa_selection": "sbytes|sttl|dbytes|ct_state_ttl",
+          "exact_objective": 1.6098201335658988,
+          "qaoa_objective": 1.6098201335658988,
+          "approximation_ratio": 1.0,
+          "exact_f1": 0.9529399255715045,
+          "exact_balanced_accuracy": 0.9358714119629166,
+          "exact_roc_auc": 0.9856452182448243,
+          "qaoa_f1": 0.9529399255715045,
+          "qaoa_balanced_accuracy": 0.9358714119629166,
+          "qaoa_roc_auc": 0.9856452182448243
+        }
+      ]
+    },
+    "pairwise_interaction_analysis": {
+      "definition": "max(0, joint directional degradation - sum of corresponding single-feature directional degradations)",
+      "baseline_f1": 0.970431672627464,
+      "perturbation_level": 0.1,
+      "features": [
+        "sbytes",
+        "sttl",
+        "dbytes",
+        "ct_state_ttl",
+        "dttl",
+        "rate",
+        "sload",
+        "dur"
+      ],
+      "num_pairs": 28,
+      "nonzero_pairs": 3,
+      "mean_interaction": 1.4684367474916496e-05,
+      "max_interaction": 0.00035152067146621,
+      "top_pairs": [
+        {
+          "feature_a": "sbytes",
+          "feature_b": "sload",
+          "positive_joint_degradation": 0.0008976595144730704,
+          "positive_additive_reference": 0.0005828426419597355,
+          "positive_interaction": 0.0003148168725133349,
+          "negative_joint_degradation": 0.0016700358199833731,
+          "negative_additive_reference": 0.001281811349564288,
+          "negative_interaction": 0.00038822447041908514,
+          "mean_interaction": 0.00035152067146621
+        },
+        {
+          "feature_a": "sbytes",
+          "feature_b": "dur",
+          "positive_joint_degradation": 0.0006857906640503897,
+          "positive_additive_reference": 0.0005828426419597355,
+          "positive_interaction": 0.00010294802209065423,
+          "negative_joint_degradation": 0.0011042368042238904,
+          "negative_additive_reference": 0.001281811349564288,
+          "negative_interaction": 0.0,
+          "mean_interaction": 5.147401104532712e-05
+        },
+        {
+          "feature_a": "sbytes",
+          "feature_b": "sttl",
+          "positive_joint_degradation": 0.0005991778555319849,
+          "positive_additive_reference": 0.0005828426419597355,
+          "positive_interaction": 1.633521357224943e-05,
+          "negative_joint_degradation": 0.0010823788363030218,
+          "negative_additive_reference": 0.001281811349564288,
+          "negative_interaction": 0.0,
+          "mean_interaction": 8.167606786124715e-06
+        },
+        {
+          "feature_a": "sbytes",
+          "feature_b": "dbytes",
+          "positive_joint_degradation": 0.0007171624668371734,
+          "positive_additive_reference": 0.0008469801327175563,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.001514290764161319,
+          "negative_additive_reference": 0.0016187838607298888,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sbytes",
+          "feature_b": "dttl",
+          "positive_joint_degradation": 0.0005828426419597355,
+          "positive_additive_reference": 0.0005828426419597355,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.001281811349564288,
+          "negative_additive_reference": 0.001281811349564288,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sbytes",
+          "feature_b": "ct_state_ttl",
+          "positive_joint_degradation": 0.0006230086665595103,
+          "positive_additive_reference": 0.0006231982652236123,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0013219417786026755,
+          "negative_additive_reference": 0.0013221669728281649,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sbytes",
+          "feature_b": "rate",
+          "positive_joint_degradation": 0.0003197732334995207,
+          "positive_additive_reference": 0.0005828426419597355,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.001061856077651191,
+          "negative_additive_reference": 0.001281811349564288,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sttl",
+          "feature_b": "dbytes",
+          "positive_joint_degradation": 0.00015478276071978492,
+          "positive_additive_reference": 0.0002641374907578209,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.00015315060116949386,
+          "negative_additive_reference": 0.0003369725111656008,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sttl",
+          "feature_b": "ct_state_ttl",
+          "positive_joint_degradation": 0.0,
+          "positive_additive_reference": 4.035562326387687e-05,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0,
+          "negative_additive_reference": 4.035562326387687e-05,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sttl",
+          "feature_b": "dttl",
+          "positive_joint_degradation": 0.0,
+          "positive_additive_reference": 0.0,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0,
+          "negative_additive_reference": 0.0,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sttl",
+          "feature_b": "rate",
+          "positive_joint_degradation": 0.0,
+          "positive_additive_reference": 0.0,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0,
+          "negative_additive_reference": 0.0,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sttl",
+          "feature_b": "sload",
+          "positive_joint_degradation": 0.0,
+          "positive_additive_reference": 0.0,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0,
+          "negative_additive_reference": 0.0,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "sttl",
+          "feature_b": "dur",
+          "positive_joint_degradation": 0.0,
+          "positive_additive_reference": 0.0,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0,
+          "negative_additive_reference": 0.0,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "dbytes",
+          "feature_b": "ct_state_ttl",
+          "positive_joint_degradation": 0.0003044176400234244,
+          "positive_additive_reference": 0.00030449311402169776,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0003772638556069907,
+          "negative_additive_reference": 0.00037732813442947766,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        },
+        {
+          "feature_a": "dbytes",
+          "feature_b": "dttl",
+          "positive_joint_degradation": 0.0002641374907578209,
+          "positive_additive_reference": 0.0002641374907578209,
+          "positive_interaction": 0.0,
+          "negative_joint_degradation": 0.0003369725111656008,
+          "negative_additive_reference": 0.0003369725111656008,
+          "negative_interaction": 0.0,
+          "mean_interaction": 0.0
+        }
+      ]
+    }
+  },
+  "interpretation": {
+    "primary_result": "QAOA produced a four-feature representation from a 42-feature predictor space, corresponding to 90.47619% dimensionality reduction.",
+    "predictive_performance": "The locked test evaluation does not demonstrate predictive superiority of QAOA feature selection over the evaluated classical feature-selection baselines.",
+    "quantum_advantage_claim": "No quantum computational advantage is claimed. QAOA solutions were evaluated against exact classical optimization on the controlled problem instances used in the experiments.",
+    "robustness_ablation": "The evaluated pairwise robustness penalty did not change the optimal four-feature subset across the tested penalty values and is therefore treated as an ablation rather than the principal model.",
+    "test_protocol": "Feature-selection configurations used for the locked test evaluation were frozen from the development-stage experiments before evaluation on the held-out UNSW-NB15 testing split."
+  }
+}
